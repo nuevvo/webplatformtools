@@ -1,1 +1,244 @@
-index.html
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Web Platform Tools</title>
+        <meta name="description" content="Web Platform Tools is a curated collection of free online web design and development services and tools that don't require local installation or registration to use." />
+        <meta name="keywords" content="web, platform, tools, services, free" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <base href="https://nuevvo.github.io/webplatformtools/" />
+
+        <meta name="distribution" content="global" />
+        <meta property="og:url" content="https://nuevvo.github.io/webplatformtools/" />
+        <meta property="og:title" content="Web Platform Tools" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Web Platform Tools is a curated collection of free online web design and development services and tools that don't require local installation or registration to use." />
+        <meta property="og:image" content="https://nuevvo.github.io/webplatformtools/images/wpt_fb.png" />
+
+        <link href="favicon.ico" rel="shortcut icon" type="/image/vnd.microsoft.icon" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="images/Icon-72@2x.png" sizes="144x144" />
+
+        <script>
+            /* URL Normalizer: Force redirect to HTTPS */
+            if(!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) window.location.protocol = "https:";
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900,200italic,400italic,900italic" />
+        <link rel="stylesheet" href="css/template.css?v=20180905_0258" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16375363-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-16375363-9');
+        </script>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <div id="oldie">
+            <div id="oldieMsg"><a id="browseHappy" href="http://browsehappy.com/" target="_blank" title="BROWSE HAPPY Online. Worry-free. Upgrade your browser today!"></a></div>
+        </div>
+    <![endif]-->
+
+        <div class="row">
+            <header class="fixed column sixteen mobile-four mainHeader" id="header">
+                <div class="searchForm column eight mobile-two">
+                    <form class="searchBlockForm" id="searchBlockForm" method="get" action="index.html">
+                        <input type="submit" class="button icon icon-search" value="🔍" />
+                        <input type="text" onfocus="if(this.value=='Search') this.value='';" size="20" maxlength="20" id="searchword" name="searchword" value="Search" />
+                    </form>
+                </div>
+                <nav class="secondary-nav column eight mobile-two">
+                    <strong>Sort </strong>
+                    <select id="sorting" class="customSelectBox">
+                        <option value="date" data-imagesrc="images/app/leaf-icon-bw.png">Newest First</option>
+                        <option value="title" data-imagesrc="images/app/alphabetical-icon-bw.png">Alphabetical</option>
+                        <option value="featured" data-imagesrc="images/app/star-icon-bw.png">Featured</option>
+                    </select>
+                </nav>
+            </header>
+
+            <aside class="sideBar fixed secondary column mobile-four">
+                <div class="logoWrap">
+                    <a href="/">
+                        <span class="logo"><i>Web Platform Tools</i></span>
+                    </a>
+                </div>
+                <div class="clr"></div>
+                <nav class="navigation accordion" id="navigation"></nav>
+            </aside>
+
+            <section class="content column sixteen">
+                <h1 id="title"><span class="mainTitle"></span><span class="mainCounter"></span></h1>
+
+                <section class="masonry" id="rows"></section>
+            </section>
+
+            <div class="clr"></div>
+
+            <footer>
+                <div class="container">
+
+                    <div class="six column aboutWrapper">
+                        <div class="footerLogo">
+                            <a target="_blank" href="https://webplatform.github.io/" title="WebPlatform.org">
+                                <span>WebPlatform.org</span>
+                            </a>
+                        </div>
+
+                        <div class="about">
+                            <strong>WebPlatform.org</strong> is an open community of developers building resources for a better web, regardless of brand, browser or platform. <br />
+                            <a target="_blank" href="https://webplatform.github.io/" title="WebPlatform.org">Learn more &amp; contribute</a>
+                        </div>
+                    </div>
+
+                    <div class="six column disclaimer">
+                        <h3>DISCLAIMER</h3>
+                        <p>Web Platform Tools is a curated collection of free online web design &amp; development services and tools that don't require local installation or registration to use. Built and managed by the folks at <a target="_blank" href="https://nuevvo.com/">Nuevvo</a>.</p>
+                    </div>
+
+                    <div class="four column suggestionLink">
+                        <ul class="social">
+                            <li><a href="https://twitter.com/nuevvo" target="_blank" class="tw icon icon-twitter"><span>Facebook</span></a></li>
+                            <li><a href="https://www.facebook.com/nuevvo" target="_blank" class="fb icon icon-facebook"><span>Twitter</span></a></li>
+                            <!--<li><a href="#" target="_blank" class="mail icon icon-mail"><span>Mail</span></a></li>-->
+                        </ul>
+
+                        <label for="modal1" role="button" class="btn" id="sendSuggestion">Send a suggestion</label>
+                        <input id="modal1" class="toggleModal hidden" type="radio"  name="modal"  value=""/>
+
+                            <div id="suggestionModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <h3>Send a suggestion</h3>
+
+                            <form action="#" method="post" enctype="multipart/form-data" target="suggestionFrame">
+                                <div id="formStatus"></div>
+
+                                <label role="button" class="close" for="closemodal">CLOSE</label>
+
+                                <div class="formRow">
+                                    <p><b>Got a suggestion for us?</b><br /><br />You can open an issue over at <a target="_blank" href="https://github.com/nuevvo/webplatformtools/issues">GitHub</a> or simply send a tweet to <a target="_blank" href="https://twitter.com/nuevvo">@nuevvo</a> with the name &amp; direct URL of the web service/tool.</p>
+                                </div>
+
+                                <!--
+                                <input type="submit" name="submit" value="DONE" />
+
+                                <div class="formRow">
+                                    <input type="text" name="title" class="formTitle" placeholder="Title" />
+                                </div>
+
+                                <div class="formRow">
+                                    <textarea name="description" placeholder="Short description"></textarea>
+                                </div>
+
+                                <div class="formRow">
+                                    <input name="screenshot" type="file" id="file" />
+                                </div>
+
+                                <div class="clr"></div>
+                                <div class="formRow">
+                                    <div class="w45 floatLeft alpha">
+                                        <label>Add some tags</label>
+                                        <input type="text" name="tagField" class="formTags" placeholder="Type here"/>
+                                        <ul id="tags"></ul>
+                                    </div>
+                                    <div class="w45 floatLeft omega">
+                                        <select id="categories" name="category" class="customSelectBox">
+                                            <option value="">Pick a category</option>
+                                        </select>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+
+                                <div class="formRow">
+                                    <input type="text" name="url" placeholder="URL" class="formURL" />
+                                </div>
+
+                                -->
+
+                                <iframe name="suggestionFrame" id="suggestionFrame"></iframe>
+                            </form>
+                        </div>
+                        <input type="radio" id="closemodal" name="modal" class="hidden">
+
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script id="directory-item-template" type="text/template">
+
+            <div class="postWrapper">
+                <% if(featured) { %>
+                <span class="indicator featured">
+                    <i class="icon icon-star"></i>
+                    Feat.
+                </span>
+                <% } %>
+
+                <% if(isNew) { %>
+                <span class="indicator isNew <% if(featured) { %> isBoth <% } %>">
+                    <i class="icon icon-leaf"></i>
+                    New
+                </span>
+                <% } %>
+
+                <figure>
+                    <a href="<%= link %>" onclick="_gaq.push(['_trackEvent', '<%= title %>', 'Visit', 'External URL']);" target="_blank">
+                        <img src="<%= img %>" alt="<%= title %>" />
+                    </a>
+                </figure>
+
+                <div class="textWrapper">
+                    <h1>
+                        <a href="<%= link %>" onclick="_gaq.push(['_trackEvent', '<%= title %>', 'Visit', 'External URL']);" target="_blank">
+                            <%= title %>
+                        </a>
+                    </h1>
+                    <div class="introText"> <%= description %> </div>
+                    <% if (tags.length > 0)  { %>
+                    <div class="tags">
+                        <span class="icon icon-archive"><i>Tags:</i></span>
+                        <ul>
+                            <% for ( var i = 0; i < tags.length; i++ ) { %>
+                            <li><a href="#/tag/<%- tags[i] %>" class="tag"><%= tags[i] %><span>,</span></a></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </script>
+
+        <script id="menu-item-template" type="text/template">
+            <a class="category" href="#/<%= link %>"><span class="title"><%= title %></span> <span class="numOfRows<% if(hasNew) { %> hasNew<% } %>"><%= numOfRows %></span></a>
+        </script>
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@1.9.1/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/filamentgroup/jQuery-Custom-File-Input/js/jQuery.fileinput.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/jsmodules/ddslick/dist/jquery.ddslick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.customSelect@0.5.2/jquery.customSelect.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/backbone@0.9.10/backbone.min.js"></script>
+
+        <script src="js/app.js?v=20180905_0258"></script>
+    </body>
+</html>
