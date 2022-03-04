@@ -137,7 +137,7 @@
                     var filter = this.featured;
                     this.title = 'Featured';
                     $('#featuredFilter').parent().addClass('active');
-                    router.navigate('https://nuevvo.github.io/webplatformtools/');
+                    router.navigate('#/');
                 } else if (mode === 'new') {
                     var filter = this.isNew;
                     this.title = 'New';
