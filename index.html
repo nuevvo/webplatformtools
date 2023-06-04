@@ -27,34 +27,10 @@
         <link rel="apple-touch-icon" href="images/apple-touch-icon-114x114.png" sizes="114x114" />
         <link rel="apple-touch-icon" href="images/Icon-72@2x.png" sizes="144x144" />
 
-        <script>
-            /* URL Normalizer: Force redirect to HTTPS */
-            if(!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) window.location.protocol = "https:";
-        </script>
-
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900,200italic,400italic,900italic" />
         <link rel="stylesheet" href="css/template.css?v=20180905_0258" />
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16375363-9"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-16375363-9');
-        </script>
     </head>
     <body>
-    <!--[if lt IE 9]>
-        <div id="oldie">
-            <div id="oldieMsg"><a id="browseHappy" href="http://browsehappy.com/" target="_blank" title="BROWSE HAPPY Online. Worry-free. Upgrade your browser today!"></a></div>
-        </div>
-    <![endif]-->
-
         <div class="row">
             <header class="fixed column sixteen mobile-four mainHeader" id="header">
                 <div class="searchForm column eight mobile-two">
@@ -230,6 +206,10 @@
         </script>
 
         <!-- JS -->
+        <script>
+            /* URL Normalizer: Force redirect to HTTPS */
+            if(!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) window.location.protocol = "https:";
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@1.9.1/jquery.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/gh/filamentgroup/jQuery-Custom-File-Input/js/jQuery.fileinput.js"></script>
